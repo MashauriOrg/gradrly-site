@@ -134,7 +134,7 @@ const LandingPage: React.FC = () => {
                     <p className="text-blue-100 text-sm">Review and manage student submissions</p>
                   </div>
                   <a
-                    href="https://app.gradrly.com/login"
+                    href="https://app.gradrly.com/login?role=mentor"
                     className="block w-full bg-white text-blue-900 px-6 py-4 rounded-xl font-semibold text-lg hover:bg-blue-50 transition-all transform hover:scale-105 shadow-xl text-center"
                   >
                     Mentor Sign In
@@ -152,7 +152,7 @@ const LandingPage: React.FC = () => {
                     <p className="text-blue-100 text-sm">Submit assignments and view feedback</p>
                   </div>
                   <a
-                    href="https://app.gradrly.com/login"
+                    href="https://app.gradrly.com/login?role=student"
                     className="block w-full bg-white text-blue-900 px-6 py-4 rounded-xl font-semibold text-lg hover:bg-blue-50 transition-all transform hover:scale-105 shadow-xl text-center"
                   >
                     Student Sign In
