@@ -4,3 +4,27 @@ expertMode = true
 
 [nix]
 channel = "stable-25_05"
+
+[workflows]
+
+[[workflows.workflow]]
+name = "Dev"
+mode = "sequential"
+author = 29688510
+
+[[workflows.workflow.tasks]]
+task = "packager.installForLanguage"
+args = "nodejs"
+
+[[workflows.workflow]]
+name = "3000"
+mode = "sequential"
+author = 29688510
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run dev -- --host 0.0.0.0 --port 3000"
+
+[[ports]]
+localPort = 3000
+externalPort = 80

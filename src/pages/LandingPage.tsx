@@ -1,74 +1,83 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { 
-  GraduationCap, 
-  Brain, 
-  Users, 
-  BarChart3, 
-  Shield, 
+import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import {
+  GraduationCap,
+  Brain,
+  Users,
+  BarChart3,
+  Shield,
   Zap,
   ArrowRight,
   CheckCircle,
-  Star
-} from 'lucide-react';
+  Star,
+} from "lucide-react";
 
 const LandingPage: React.FC = () => {
   const features = [
     {
       icon: Brain,
-      title: 'AI-Powered Grading',
-      description: 'Advanced AI algorithms provide consistent, detailed feedback and scoring for student assignments.'
+      title: "AI-Powered Grading",
+      description:
+        "Advanced AI algorithms provide consistent, detailed feedback and scoring for student assignments.",
     },
     {
       icon: Users,
-      title: 'Multi-Role Support',
-      description: 'Seamlessly manage professors, students, and graders across multiple institutions.'
+      title: "Multi-Role Support",
+      description:
+        "Seamlessly manage professors, students, and graders across multiple institutions.",
     },
     {
       icon: BarChart3,
-      title: 'Comprehensive Analytics',
-      description: 'Track performance trends and generate detailed reports for informed decision-making.'
+      title: "Comprehensive Analytics",
+      description:
+        "Track performance trends and generate detailed reports for informed decision-making.",
     },
     {
       icon: Shield,
-      title: 'Enterprise Security',
-      description: 'Bank-level security ensures your academic data remains protected and private.'
+      title: "Enterprise Security",
+      description:
+        "Bank-level security ensures your academic data remains protected and private.",
     },
     {
       icon: Zap,
-      title: 'Instant Feedback',
-      description: 'Students receive immediate, actionable feedback to accelerate their learning process.'
+      title: "Instant Feedback",
+      description:
+        "Students receive immediate, actionable feedback to accelerate their learning process.",
     },
     {
       icon: GraduationCap,
-      title: 'Rubric Builder',
-      description: 'Create detailed, customizable rubrics that align with your educational objectives.'
-    }
+      title: "Rubric Builder",
+      description:
+        "Create detailed, customizable rubrics that align with your educational objectives.",
+    },
   ];
 
   const testimonials = [
     {
-      name: 'Dr. Sarah Johnson',
-      role: 'Professor of Computer Science',
-      institution: 'Stanford University',
-      content: 'Gradrly has revolutionized how I grade assignments. The AI feedback is incredibly detailed and saves me hours every week.',
-      rating: 5
+      name: "Dr. Sarah Johnson",
+      role: "Professor of Computer Science",
+      institution: "Stanford University",
+      content:
+        "Gradrly has revolutionized how I grade assignments. The AI feedback is incredibly detailed and saves me hours every week.",
+      rating: 5,
     },
     {
-      name: 'Prof. Michael Chen',
-      role: 'Mathematics Department',
-      institution: 'MIT',
-      content: 'The rubric builder is intuitive and the analytics help me understand my students\' progress like never before.',
-      rating: 5
+      name: "Prof. Michael Chen",
+      role: "Mathematics Department",
+      institution: "MIT",
+      content:
+        "The rubric builder is intuitive and the analytics help me understand my students' progress like never before.",
+      rating: 5,
     },
     {
-      name: 'Dr. Emily Rodriguez',
-      role: 'English Literature',
-      institution: 'Harvard University',
-      content: 'My students love the instant feedback, and I appreciate how it maintains consistency across all submissions.',
-      rating: 5
-    }
+      name: "Dr. Emily Rodriguez",
+      role: "English Literature",
+      institution: "Harvard University",
+      content:
+        "My students love the instant feedback, and I appreciate how it maintains consistency across all submissions.",
+      rating: 5,
+    },
   ];
 
   return (
@@ -80,9 +89,9 @@ const LandingPage: React.FC = () => {
           {/* Navigation */}
           <nav className="flex items-center justify-between py-6">
             <div className="flex items-center space-x-2">
-              <img 
-                src="/Gradrly logo 2.png" 
-                alt="Gradrly" 
+              <img
+                src="/Gradrly logo 2.png"
+                alt="Gradrly"
                 className="h-8 w-8 object-contain"
               />
               <span className="text-2xl font-bold text-white">Gradrly</span>
@@ -118,10 +127,11 @@ const LandingPage: React.FC = () => {
                 </span>
               </h1>
               <p className="text-xl lg:text-2xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed">
-                Streamline assignment grading, provide instant feedback, and enhance learning outcomes 
-                with our intelligent academic platform designed for modern education.
+                Streamline assignment grading, provide instant feedback, and
+                enhance learning outcomes with our intelligent academic platform
+                designed for modern education.
               </p>
-              
+
               {/* Call-to-Action Buttons */}
               <div className="flex flex-col lg:flex-row gap-6 justify-center items-center max-w-4xl mx-auto">
                 {/* Mentor Sign In */}
@@ -130,11 +140,16 @@ const LandingPage: React.FC = () => {
                     <div className="bg-white bg-opacity-20 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <Users className="h-8 w-8 text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-white mb-2">For Mentors</h3>
-                    <p className="text-blue-100 text-sm">Review and manage student submissions</p>
+                    <h3 className="text-2xl font-bold text-white mb-2">
+                      For Mentors
+                    </h3>
+                    <p className="text-blue-100 text-sm">
+                      Review and manage student submissions
+                    </p>
                   </div>
                   <a
-                    href="https://app.gradrly.com/login?role=mentor"
+                    href="https://app.gradrly.com/login
+"
                     className="block w-full bg-white text-blue-900 px-6 py-4 rounded-xl font-semibold text-lg hover:bg-blue-50 transition-all transform hover:scale-105 shadow-xl text-center"
                   >
                     Mentor Sign In
@@ -148,11 +163,15 @@ const LandingPage: React.FC = () => {
                     <div className="bg-white bg-opacity-20 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <GraduationCap className="h-8 w-8 text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-white mb-2">For Students</h3>
-                    <p className="text-blue-100 text-sm">Submit assignments and view feedback</p>
+                    <h3 className="text-2xl font-bold text-white mb-2">
+                      For Students
+                    </h3>
+                    <p className="text-blue-100 text-sm">
+                      Submit assignments and view feedback
+                    </p>
                   </div>
                   <a
-                    href="https://app.gradrly.com/login?role=student"
+                    href="https://app.gradrly.com/login"
                     className="block w-full bg-white text-blue-900 px-6 py-4 rounded-xl font-semibold text-lg hover:bg-blue-50 transition-all transform hover:scale-105 shadow-xl text-center"
                   >
                     Student Sign In
@@ -181,8 +200,9 @@ const LandingPage: React.FC = () => {
               </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our comprehensive platform combines cutting-edge AI with intuitive design 
-              to revolutionize how educators assess and provide feedback on student work.
+              Our comprehensive platform combines cutting-edge AI with intuitive
+              design to revolutionize how educators assess and provide feedback
+              on student work.
             </p>
           </motion.div>
 
@@ -199,8 +219,12 @@ const LandingPage: React.FC = () => {
                 <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-3 rounded-xl w-fit mb-6">
                   <feature.icon className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">{feature.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  {feature.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {feature.description}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -236,14 +260,23 @@ const LandingPage: React.FC = () => {
               >
                 <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                    <Star
+                      key={i}
+                      className="h-5 w-5 text-yellow-400 fill-current"
+                    />
                   ))}
                 </div>
-                <p className="text-gray-700 mb-6 italic">"{testimonial.content}"</p>
+                <p className="text-gray-700 mb-6 italic">
+                  "{testimonial.content}"
+                </p>
                 <div>
-                  <p className="font-semibold text-gray-900">{testimonial.name}</p>
+                  <p className="font-semibold text-gray-900">
+                    {testimonial.name}
+                  </p>
                   <p className="text-sm text-gray-600">{testimonial.role}</p>
-                  <p className="text-sm text-blue-600">{testimonial.institution}</p>
+                  <p className="text-sm text-blue-600">
+                    {testimonial.institution}
+                  </p>
                 </div>
               </motion.div>
             ))}
@@ -263,7 +296,8 @@ const LandingPage: React.FC = () => {
               Ready to Transform Your Grading Process?
             </h2>
             <p className="text-xl text-blue-100 mb-10">
-              Join thousands of educators who have already revolutionized their workflow with Gradrly.
+              Join thousands of educators who have already revolutionized their
+              workflow with Gradrly.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -283,20 +317,44 @@ const LandingPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="flex items-center justify-center space-x-2 mb-4">
-              <img 
-                src="/Gradrly logo 2.png" 
-                alt="Gradrly" 
+              <img
+                src="/Gradrly logo 2.png"
+                alt="Gradrly"
                 className="h-8 w-8 object-contain"
               />
               <span className="text-2xl font-bold">Gradrly</span>
             </div>
-            <p className="text-gray-400 mb-8">Transforming education through intelligent grading solutions.</p>
+            <p className="text-gray-400 mb-8">
+              Transforming education through intelligent grading solutions.
+            </p>
             <div className="flex justify-center space-x-8 text-sm text-gray-400">
-              <Link to="/student-portal" className="hover:text-white transition-colors">Student Portal</Link>
-              <Link to="/grader-portal" className="hover:text-white transition-colors">Grader Portal</Link>
-              <Link to="/about" className="hover:text-white transition-colors">About</Link>
-              <Link to="/pricing" className="hover:text-white transition-colors">Pricing</Link>
-              <a href="https://app.gradrly.com/login" className="hover:text-white transition-colors">Sign In</a>
+              <Link
+                to="/student-portal"
+                className="hover:text-white transition-colors"
+              >
+                Student Portal
+              </Link>
+              <Link
+                to="/grader-portal"
+                className="hover:text-white transition-colors"
+              >
+                Grader Portal
+              </Link>
+              <Link to="/about" className="hover:text-white transition-colors">
+                About
+              </Link>
+              <Link
+                to="/pricing"
+                className="hover:text-white transition-colors"
+              >
+                Pricing
+              </Link>
+              <a
+                href="https://app.gradrly.com/login"
+                className="hover:text-white transition-colors"
+              >
+                Sign In
+              </a>
             </div>
           </div>
         </div>
