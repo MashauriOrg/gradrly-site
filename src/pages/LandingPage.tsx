@@ -148,8 +148,7 @@ const LandingPage: React.FC = () => {
                     </p>
                   </div>
                   <a
-                    href="https://app.gradrly.com/login
-"
+                    href="https://gradrly-app.onrender.com/login"
                     className="block w-full bg-white text-blue-900 px-6 py-4 rounded-xl font-semibold text-lg hover:bg-blue-50 transition-all transform hover:scale-105 shadow-xl text-center"
                   >
                     Mentor Sign In
@@ -171,7 +170,7 @@ const LandingPage: React.FC = () => {
                     </p>
                   </div>
                   <a
-                    href="https://app.gradrly.com/login"
+                    href="https://gradrly-app.onrender.com/login"
                     className="block w-full bg-white text-blue-900 px-6 py-4 rounded-xl font-semibold text-lg hover:bg-blue-50 transition-all transform hover:scale-105 shadow-xl text-center"
                   >
                     Student Sign In
