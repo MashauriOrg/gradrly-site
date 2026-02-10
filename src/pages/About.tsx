@@ -40,29 +40,24 @@ const About: React.FC = () => {
 
   const team = [
     {
-      name: 'Dr. Sarah Chen',
+      name: 'Simon Gifford',
       role: 'CEO & Co-Founder',
-      bio: 'Former Stanford professor with 15+ years in educational technology and AI research.',
-      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400'
+      bio: 'Educator, Entrepreneur, Expert in innovationthrough entrepreneurship, former Deloitte Consulting partner',
+      image: '/team/simon.png'
     },
     {
-      name: 'Michael Rodriguez',
-      role: 'CTO & Co-Founder',
-      bio: 'Ex-Google engineer specializing in machine learning and educational platforms.',
+      name: 'Apoorv Bamba',
+      role: 'Co-Founder',
+      bio: 'Serial entrepreneur in edtech and eployability, with a focus on scalable educational solutions.',
       image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
-      name: 'Dr. Emily Johnson',
-      role: 'Head of Education',
-      bio: 'Educational psychologist with expertise in assessment and learning analytics.',
+      name: 'Dr. Clint Davies',
+      role: 'CPO Mashauri',
+      bio: 'Thesis on entrepreneur education and training effectiveness.',
       image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400'
-    },
-    {
-      name: 'David Kim',
-      role: 'Head of AI',
-      bio: 'AI researcher focused on natural language processing and educational applications.',
-      image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400'
     }
+    
   ];
 
   const stats = [
@@ -164,7 +159,7 @@ const About: React.FC = () => {
               className="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl"
             >
               <div className="grid grid-cols-2 gap-6">
-                {stats.map((stat, index) => (
+                {stats.map((stat) => (
                   <div key={stat.label} className="text-center">
                     <div className="bg-white p-4 rounded-xl shadow-md mb-3">
                       <stat.icon className="h-8 w-8 text-blue-600 mx-auto mb-2" />
@@ -236,7 +231,8 @@ const About: React.FC = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-8">
+
             {team.map((member, index) => (
               <motion.div
                 key={member.name}
