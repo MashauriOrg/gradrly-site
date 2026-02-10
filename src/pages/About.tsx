@@ -5,13 +5,11 @@ import {
   Brain, 
   Users, 
   Target, 
-  Award,
   Lightbulb,
   Heart,
   Globe,
   Zap,
   Shield,
-  TrendingUp
 } from 'lucide-react';
 
 const About: React.FC = () => {
@@ -300,28 +298,13 @@ const About: React.FC = () => {
                 From Problem to Solution
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Founded in 2023 by educators and technologists who experienced firsthand the 
-                challenges of traditional grading, Gradrly emerged from a simple question: 
-                "What if we could give students instant, detailed feedback without compromising quality?"
+                Founded in 2026 by our co-founders, co-creating with their site mentors, we wanted to address the issue of grading: bottlenecks, slow responses, students waiting and sometimes inconsistent assessments. These turned into a simple question: "What if we could give students instant, detailed feedback without compromising quality?"
+
               </p>
               <p className="text-lg text-gray-600 mb-8">
-                Today, we're proud to serve hundreds of institutions worldwide, helping educators 
-                reclaim their time while providing students with the rapid feedback they need to excel.
+                Today, we're implementing this system as we roll out our products to new and existing clients, helping educators reclaim their time while providing students with the rapid feedback they need to excel.
               </p>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <TrendingUp className="h-5 w-5 text-green-500" />
-                  <span className="text-gray-700">500+ universities trust Gradrly</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Award className="h-5 w-5 text-blue-500" />
-                  <span className="text-gray-700">Winner of EdTech Innovation Award 2024</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Users className="h-5 w-5 text-purple-500" />
-                  <span className="text-gray-700">100,000+ students served globally</span>
-                </div>
-              </div>
+             
             </motion.div>
           </div>
         </div>
